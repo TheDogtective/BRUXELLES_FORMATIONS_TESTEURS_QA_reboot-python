@@ -51,3 +51,23 @@ try:
 except (ValueError, TypeError) as e:
     print('Erreur : ', e)
 
+class RobertError(Exception):
+    pass
+
+def say_hello_age(prenom: str, age: int):
+    if prenom == 'Robert':
+        raise RobertError('Pas de bob ici')
+    if type(prenom) != str:
+        raise TypeError("Un prénom n'est pas un int")
+    if type(age) != int:
+        raise TypeError("un age est un int")
+    if age < 0:
+        raise ValueError("tu n'es pas né")
+    return f'Bonjour {prenom} tu as {age} ans !'
+
+try:
+    print(say_hello_age('Robert', '26'))
+except (ValueError, TypeError, RobertError) as e:
+    print('Erreur :', e)
+finally:
+    print('Good Bye')
