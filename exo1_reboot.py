@@ -28,6 +28,8 @@ users = [
 # Q1 — Afficher le nom de chaque utilisateur.
 
 
+
+
 # Q2 — Afficher uniquement les utilisateurs actifs.
 
 
