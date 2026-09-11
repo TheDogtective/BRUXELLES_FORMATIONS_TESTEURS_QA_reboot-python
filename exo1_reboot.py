@@ -89,18 +89,19 @@ for user in users:
 
 # Q7
 """ def get_active_users(users):
+    # return [u for u in users if u["active"]]  version rapide : compréhension de liste
     active_users = []
     for user in users:
-         if user["active"] == True:
-              active_users.append(user)
+        if user["active"]: 
+            active_users.append(user)
     return active_users
-print(get_active_users(users))
- """
+print(get_active_users(users)) """
+
 # Q8
 """ def get_active_adults(users):
     adult_active_users = []
     for user in users:
-        if user["age"] >= 18 and user["active"] == True:
+        if user["age"] >= 18 and user["active"]:
             adult_active_users.append(user)
     return adult_active_users
 print(get_active_adults(users))
