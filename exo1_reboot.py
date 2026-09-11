@@ -131,4 +131,4 @@ def get_statistics(users):
     }
     return dict_stat
 
-print(get_statistics(users))
+print(get_statistics(users))           
