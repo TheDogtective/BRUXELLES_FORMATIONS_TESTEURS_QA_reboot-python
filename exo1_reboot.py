@@ -38,13 +38,12 @@ display_all_users(users)
  """
 # Q2 — Afficher uniquement les utilisateurs actifs.
 
-""" def active_users(users):
+def active_users(users):
     for user in users:
         if user["active"] == True:
-            print(user["name"])
+           # print(user["name"])
 
 active_users(users)
- """
 # Q3 — Compter les utilisateurs actifs et afficher "<n> utilisateurs actifs".
 
 def user_count(users):
@@ -61,51 +60,49 @@ def user_count(users):
 
 # Q4 — Afficher uniquement les utilisateurs majeurs (18 ans ou plus).
 
-""" def adult_users(users):
+def adult_users(users):
     for user in users:
         if user["age"] >= 18:
-            print(user)
+           # print(user)
 
-adult_users(users) """
+adult_users(users)
 
 # Q5 — Afficher les utilisateurs qui sont à la fois actifs ET majeurs.
 
-""" def adult_active_users(users):
+def adult_active_users(users):
     for user in users:
         if user["age"] >= 18 and user["active"] == True:
-            print(user)
+           # print(user)
 
 adult_active_users(users)
- """
 
 # ----- Partie B : les fonctions -----
 
 # Q6
-""" def is_adult(user):
+def is_adult(user):
         return user["age"] >= 18
 for user in users:
     statut_majeur = is_adult(user)
-    print(f"{user['name']} (Âge: {user['age']}) -> Majeur: {statut_majeur}") """
+   # print(f"{user['name']} (Âge: {user['age']}) -> Majeur: {statut_majeur}")
 
 # Q7
-""" def get_active_users(users):
+def get_active_users(users):
     # return [u for u in users if u["active"]]  fast variant : list comprehension 
     active_users = []
     for user in users:
         if user["active"]: 
             active_users.append(user)
     return active_users
-print(get_active_users(users)) """
+# print(get_active_users(users))
 
 # Q8
-""" def get_active_adults(users):
+def get_active_adults(users):
     adult_active_users = []
     for user in users:
         if user["age"] >= 18 and user["active"]:
             adult_active_users.append(user)
     return adult_active_users
-print(get_active_adults(users))
-     """
+# print(get_active_adults(users))
 
 
 # Q9
