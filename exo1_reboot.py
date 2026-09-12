@@ -89,7 +89,7 @@ for user in users:
 
 # Q7
 """ def get_active_users(users):
-    # return [u for u in users if u["active"]]  version rapide : compréhension de liste
+    # return [u for u in users if u["active"]]  fast variant : list comprehension 
     active_users = []
     for user in users:
         if user["active"]: 
